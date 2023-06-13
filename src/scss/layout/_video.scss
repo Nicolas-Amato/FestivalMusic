@@ -5,6 +5,7 @@
 .video {
     position: relative;  
     max-height: 70%;
+    min-width: 50%;
     overflow: hidden;
 
     
@@ -20,12 +21,16 @@
     }
 
     video {
-        width: 100%;
+        width: auto;
         display: block;
+        @include m.tablet {
+            width: 100%;        
+        }
     }
 }
 
 .contenido-video {
+    z-index: 10;
     h2 {
         color: v.$blanco;
         font-size: 7rem;
@@ -40,6 +45,5 @@
         color: v.$blanco;
         font-weight: 700;
         font-size: 2rem;
-
     }
 }  
