@@ -8,7 +8,7 @@ const plumber = require('gulp-plumber');
 
 //imagenes
 const cache = require('gulp-cache');
-const imagemin = require('gulp-imagemin');
+const imagemi = require('gulp-imagemi');
 const webp = require('gulp-webp');
 
 function css(done) {
@@ -26,7 +26,7 @@ function imagenes(done){
         optimizationLevel: 3
     }  
     src('src/img/**/*.{png,jpg}')
-     .pipe(cache(imagemin(opciones)))
+     .pipe(cache(imagemi(opciones)))
      .pipe(dest('build/img'))
     done();
 
