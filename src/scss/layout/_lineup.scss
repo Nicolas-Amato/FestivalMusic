@@ -1,0 +1,14 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.lineup {
+    background-color: v.$rosa;
+    padding: 5rem 0;
+
+    h3, p {
+        text-align: center;
+        color: v.$blanco;
+
+    }
+
+}
