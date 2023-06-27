@@ -10,9 +10,15 @@
 
 .galeria-fotos{ 
     @include m.resetear-lista;
-    @include m.grid(2, 3rem);
+    @include m.grid(2, 2rem);    
     @include m.phone{
-        @include m.grid(4,3rem);
+        @include m.grid(3, 2rem);
+    }
+    @include m.tablet{
+        @include m.grid(4, 2rem);
+    }
+    @include m.desktop {
+        @include m.grid(6, 3rem);    
     }
 
 }
