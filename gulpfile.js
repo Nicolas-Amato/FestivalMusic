@@ -56,7 +56,7 @@ function versionavif(done) {
     done();
 }
 
-function javascritp(done){
+function javascrits(done){
     src('src/js/**/*js')
     .pipe(dest('build/js'))
     done();
@@ -65,14 +65,14 @@ function javascritp(done){
 
 function dev(done) {
     watch('src/scss/**/*.scss', css)
-    watch('src/js/**/*.js', javascript);
+    watch('src/js/**/*.js', javascrits)
     done();
 
 }
 
 exports.css = css;
-exports.javascript = javascript;
+exports.javascrits = javascrits;
 exports.imagenes = imagenes
 exports.versionWebp = versionWebp;
 exports.versionavif = versionavif;
-exports.dev = parallel(imagenes,versionWebp,versionavif,dev,javascript);
+exports.dev = parallel(imagenes,versionWebp,versionavif,javascrits,dev);
