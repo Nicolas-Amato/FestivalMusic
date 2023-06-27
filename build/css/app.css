@@ -475,11 +475,60 @@ img {
   font-weight: 700;
 }
 
-.lineup {
+.LineUp {
   background-color: #f53756;
   padding: 5rem 0;
 }
-.lineup h3, .lineup p {
+.LineUp h3, .LineUp p {
   text-align: center;
   color: #ffffff;
+}
+.LineUp .dia {
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .escenario-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+  }
+}
+.escenario-contenedor p {
+  color: #000000;
+}
+
+.escenario {
+  padding-top: 2rem;
+}
+.escenario p:after {
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 10rem;
+  background-size: 15rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 2 rem auto 0 auto;
+}
+
+.EMD .nombre-escenario:after {
+  background-image: url(../img/icono_edm.png);
+}
+
+.ROCK .nombre-escenario:after {
+  background-image: url(../img/icono_rock.png);
+}
+
+.bg-amarillo {
+  background-color: #fef46d;
+}
+
+.bg-verde {
+  background-color: #4cb8b3;
+}
+
+.calendario {
+  color: #000000;
 }
