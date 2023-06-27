@@ -7,7 +7,7 @@ function IniciarApp(){
 }
 
 function creargaleria(){
-    const galeria = document.querySelector('galeria-fotos')
+    const galeria = document.querySelector('.galeria-fotos')
     for(let i = 1; i <= 12; i++){
         const imagen = document.createElement('picture');
         imagen.innerHTML = `

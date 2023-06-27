@@ -1,0 +1,21 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.galeria{
+    padding: 5rem 0;
+    h3 {
+        text-align: center;
+    }
+}
+
+.galeria-fotos{ 
+    @include m.resetear-lista;
+    @include m.grid(2, 2rem);
+    @include m.telefono {
+        @include m.grid(3,2rem);
+    }
+    @include m.phone{
+        @include m.grid(4,3rem);
+    }
+
+}
