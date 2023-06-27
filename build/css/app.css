@@ -549,3 +549,26 @@ img {
 .calendario li span {
   font-weight: 400;
 }
+
+.Galeria {
+  padding: 5rem 0;
+}
+.Galeria h3 {
+  text-align: center;
+}
+
+.galeria-fotos {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+}
+@media (min-width: 480px) {
+  .galeria-fotos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3rem;
+  }
+}
