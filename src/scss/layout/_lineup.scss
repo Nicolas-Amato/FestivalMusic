@@ -4,6 +4,7 @@
 .LineUp {
     background-color: v.$rosa;
     padding: 5rem 0;
+    border-radius: 2%;
 
     h3, p {
         text-align: center;
@@ -12,7 +13,7 @@
 
     .dia {
         text-transform: uppercase;
-        margin-bottom: 5rem;
+        margin: 5rem 0;
     }
 
 }
@@ -55,13 +56,27 @@
 }
 
 .bg-amarillo {
-    background-color: v.$amarillo;
+    background-color: v.$amarillo;    
+    li:nth-child(odd){
+        background-color: darken(v.$amarillo, 25%);
+    }
 }
 
 .bg-verde{
     background-color: v.$verde;
+    li:nth-child(odd){
+        background-color: darken(v.$verde, 15%);
+    }
 }
 
 .calendario {
-    color: v.$negro;
+    @include m.resetear-lista;
+    li {
+        color: v.$negro;
+        padding: 25px;
+        font-weight: 700;
+        span{
+            font-weight: 400;
+        }
+    }
 }

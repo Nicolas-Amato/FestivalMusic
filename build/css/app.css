@@ -478,6 +478,7 @@ img {
 .LineUp {
   background-color: #f53756;
   padding: 5rem 0;
+  border-radius: 2%;
 }
 .LineUp h3, .LineUp p {
   text-align: center;
@@ -485,7 +486,7 @@ img {
 }
 .LineUp .dia {
   text-transform: uppercase;
-  margin-bottom: 5rem;
+  margin: 5rem 0;
 }
 
 @media (min-width: 768px) {
@@ -510,7 +511,7 @@ img {
   background-size: 15rem;
   background-repeat: no-repeat;
   background-position: center center;
-  margin: 2 rem auto 0 auto;
+  margin: 2rem auto 0 auto;
 }
 
 .EMD .nombre-escenario:after {
@@ -524,11 +525,27 @@ img {
 .bg-amarillo {
   background-color: #fef46d;
 }
+.bg-amarillo li:nth-child(odd) {
+  background-color: #eada02;
+}
 
 .bg-verde {
   background-color: #4cb8b3;
 }
+.bg-verde li:nth-child(odd) {
+  background-color: #348380;
+}
 
 .calendario {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.calendario li {
   color: #000000;
+  padding: 25px;
+  font-weight: 700;
+}
+.calendario li span {
+  font-weight: 400;
 }
