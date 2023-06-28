@@ -36,11 +36,15 @@ function mostrarImagen(id){
     overley.classList.add('overley');
 
     const cerrarimg = document.createElement('P');
+
     cerrarimg.textContent = 'X';
+
     cerrarimg.classList.add('cerrarimg');
+
     cerrarimg.onclick = function(){
         overley.remove();
-    }
+    };
+    
     overley.appendChild(cerrarimg);
 
 
