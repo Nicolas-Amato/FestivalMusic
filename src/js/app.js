@@ -35,6 +35,8 @@ function mostrarImagen(id){
     overley.appendChild(imagen);
     overley.classList.add('overley');
 
+//boton para cerrar el modulo//
+
     const cerrarimg = document.createElement('P');
 
     cerrarimg.textContent = 'X';
@@ -42,14 +44,15 @@ function mostrarImagen(id){
     cerrarimg.classList.add('cerrarimg');
 
     cerrarimg.onclick = function(){
+        const body = document.querySelector('body');
+        body.classList.remove('fijar-body');
         overley.remove();
     };
-    
+
     overley.appendChild(cerrarimg);
 
-
+//agregarlo al HTML//
     const body = document.querySelector('body');
     body.appendChild(overley);
-    
-
+    body.classList.add('fijar-body');
 }
