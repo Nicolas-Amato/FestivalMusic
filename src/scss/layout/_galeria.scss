@@ -3,10 +3,9 @@
 
 .Galeria {
     padding: 5rem 0;
-    h3 {
-        text-align: center;
+    text-align: center;
     }
-}
+
 
 .galeria-fotos{ 
     @include m.resetear-lista;
@@ -14,11 +13,53 @@
     @include m.phone{
         @include m.grid(3, 2rem);
     }
-    @include m.tablet{
+    @include m.tablet {
         @include m.grid(4, 2rem);
     }
     @include m.desktop {
         @include m.grid(6, 3rem);    
     }
+
+}
+
+.overley{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    place-items: center;
+    background-color: rgb(0 0 0 / .5);
+    
+
+
+
+    picture{
+        display: block;
+        max-width: 90rem;
+    }
+
+    .cerrarimg{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        background-color: v.$blanco;
+        color: v.$negro;
+        display: grid;
+        place-items: center;
+        font-weight: 700;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+
+    }
+
 
 }

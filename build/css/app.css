@@ -552,8 +552,6 @@ img {
 
 .Galeria {
   padding: 5rem 0;
-}
-.Galeria h3 {
   text-align: center;
 }
 
@@ -585,4 +583,34 @@ img {
     grid-template-columns: repeat(6, 1fr);
     gap: 3rem;
   }
+}
+
+.overley {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.overley picture {
+  display: block;
+  max-width: 90rem;
+}
+.overley .cerrarimg {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #000000;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+.overley .cerrarimg:hover {
+  cursor: pointer;
 }
