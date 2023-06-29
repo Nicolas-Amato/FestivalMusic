@@ -554,7 +554,7 @@ img {
 }
 
 .Galeria {
-  padding: 5rem 0;
+  padding: 5rem;
   text-align: center;
 }
 
@@ -565,12 +565,14 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+  padding: 3rem;
 }
 @media (min-width: 480px) {
   .galeria-fotos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    padding: 3rem;
   }
 }
 @media (min-width: 768px) {
@@ -578,6 +580,7 @@ img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+    padding: 3rem;
   }
 }
 @media (min-width: 998px) {
@@ -585,6 +588,7 @@ img {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 3rem;
+    padding: 3rem;
   }
 }
 
@@ -616,4 +620,45 @@ img {
 }
 .overley .cerrarimg:hover {
   cursor: pointer;
+}
+
+.boletos {
+  padding: 5rem 0;
+}
+.boletos h3 {
+  text-align: center;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .boletos .contenedor-boletos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+  }
+}
+
+.pase-header, .pase-footer {
+  padding: 0.5rem;
+}
+.pase-header p, .pase-footer p {
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+.pase-header {
+  background-color: #f53756;
+}
+.pase-header p {
+  text-transform: uppercase;
+  font-size: 1.6;
+}
+.pase-body {
+  background-color: #ffffff;
+}
+.pase-footer {
+  background-color: #752f97;
+}
+.pase-footer p {
+  font-weight: 700;
+  font-size: 2.4rem;
 }
