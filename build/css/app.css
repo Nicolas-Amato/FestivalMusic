@@ -557,6 +557,9 @@ img {
   padding: 5rem;
   text-align: center;
 }
+.Galeria p {
+  margin: 0;
+}
 
 .galeria-fotos {
   margin: 0;
@@ -589,6 +592,7 @@ img {
     grid-template-columns: repeat(6, 1fr);
     gap: 3rem;
     padding: 3rem;
+    margin-top: 3rem;
   }
 }
 
@@ -628,6 +632,7 @@ img {
 .boletos h3 {
   text-align: center;
   color: #ffffff;
+  margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
   .boletos .contenedor-boletos {
@@ -637,6 +642,11 @@ img {
   }
 }
 
+.pase .nombre-pase {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #ffffff;
+}
 .pase-header, .pase-footer {
   padding: 0.5rem;
 }
@@ -645,20 +655,42 @@ img {
   color: #ffffff;
   margin: 0;
 }
-.pase-header {
+.pase .pase-header {
   background-color: #f53756;
 }
-.pase-header p {
+.pase .pase-header p {
   text-transform: uppercase;
   font-size: 1.6;
 }
-.pase-body {
+.pase .pase-body {
   background-color: #ffffff;
+  color: #000000;
 }
-.pase-footer {
+.pase .pase-body ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.pase .pase-body ul li,
+.pase .pase-body ul :nth-child(odd) {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+.pase .pase-footer {
   background-color: #752f97;
 }
-.pase-footer p {
+.pase .pase-footer p {
   font-weight: 700;
   font-size: 2.4rem;
+}
+
+.site-footer {
+  background-color: #f53756;
+  padding: 1rem;
+}
+.site-footer p {
+  margin: 0;
+  text-align: center;
+  color: #ffffff;
 }
