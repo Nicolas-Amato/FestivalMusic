@@ -14,9 +14,9 @@ function fijandobarra(){
     
     window.addEventListener('scroll', function(){
         if(sobreFestival.getBoundingClientRect().top < 0 ){
-            barra.appendChild.add('fija');
+            barra.classList.add('fija');
         } else {
-            barra.appendChild.remove('fija');
+            barra.classList.remove('fija');
         }
     })
 }
