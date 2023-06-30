@@ -10,13 +10,16 @@ function IniciarApp(){
 
 function fijandobarra(){
     const barra = document.querySelector('.header');
-    const sobreFestival = document.querySelector('.contenido-festival');
+    const sobreFestival = document.querySelector('.sobre-festival');
+    const body = document.querySelector('body');
     
     window.addEventListener('scroll', function(){
         if(sobreFestival.getBoundingClientRect().top < 0 ){
             barra.classList.add('fija');
+            body.classList.add('body-fija');
         } else {
             barra.classList.remove('fija');
+            body.classList.remove('body-fija');
         }
     })
 }

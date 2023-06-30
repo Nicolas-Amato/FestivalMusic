@@ -10,6 +10,7 @@ html{
 *:after {
     box-sizing: inherit;
 }
+
 body{
     font-family: v.$fuente_principal;
     font-size: 16px;
@@ -17,6 +18,9 @@ body{
     &.fijar-body{
         overflow: hidden;
 
+    }
+    &.body-fijo{
+        padding-top: 8.6rem;
     }
 } 
 
