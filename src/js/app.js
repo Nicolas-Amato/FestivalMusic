@@ -10,10 +10,14 @@ function IniciarApp(){
 function Scrollnav(){
     const enlaces = document.querySelectorAll('.navegacion-principal .a');
     enlaces.forEach( enlace => {
-        enlace.addEventListener('click', function(e) {
-            console.log(e.target.attributes.href.value);
-        })
-    })
+        enlace.addEventListener('click', function(e){
+            e.preventDefault();
+            
+            const seccionScrol = e.target.attributes.href.value;
+            const seccion = document.querySelector(seccionScrol);
+            seccion.scrollIntoview({ behavior: "smooth"});
+        });
+    });
 
 }
 
