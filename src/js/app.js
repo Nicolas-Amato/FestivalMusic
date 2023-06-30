@@ -1,30 +1,25 @@
-const { Console } = require("console");
-
 document.addEventListener('DOMContentLoaded', function(){
     IniciarApp();
 });
 
 function IniciarApp(){
-    barraFija();
+    fijandobarra();
     creargaleria();
     Scrollnav();
 }
-function barraFija(){
+
+function fijandobarra(){
     const barra = document.querySelector('.header');
-    const sobrefestival = document.querySelector('.sobre-festival');
+    const sobreFestival = document.querySelector('.contenido-festival');
     
-    window.addEventListener('scroll', function() {
-        if(sobrefestival.getBoundingClientRect().bottom < 0 ) {
-            Console.log('pasamos el elemento')}
-            else{
-                console.log('au no')
-            }
-        });
+    window.addEventListener('scroll', function(){
+        if(sobreFestival.getBoundingClientRect().top < 0 ){
+            barra.appendChild.add('fija');
+        } else {
+            barra.appendChild.remove('fija');
+        }
+    })
 }
-
-
-
-
 
 function Scrollnav(){
     const enlaces = document.querySelectorAll('.navegacion-principal a');
