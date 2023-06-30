@@ -1,21 +1,40 @@
+const { Console } = require("console");
+
 document.addEventListener('DOMContentLoaded', function(){
     IniciarApp();
 });
 
 function IniciarApp(){
+    barraFija();
     creargaleria();
     Scrollnav();
 }
+function barraFija(){
+    const barra = document.querySelector('.header');
+    const sobrefestival = document.querySelector('.sobre-festival');
+    
+    window.addEventListener('scroll', function() {
+        if(sobrefestival.getBoundingClientRect().bottom < 0 ) {
+            Console.log('pasamos el elemento')}
+            else{
+                console.log('au no')
+            }
+        });
+}
+
+
+
+
 
 function Scrollnav(){
-    const enlaces = document.querySelectorAll('.navegacion-principal .a');
+    const enlaces = document.querySelectorAll('.navegacion-principal a');
     enlaces.forEach( enlace => {
         enlace.addEventListener('click', function(e){
             e.preventDefault();
             
             const seccionScrol = e.target.attributes.href.value;
             const seccion = document.querySelector(seccionScrol);
-            seccion.scrollIntoview({ behavior: "smooth"});
+            seccion.scrollIntoView({ behavior: 'smooth'});
         });
     });
 
